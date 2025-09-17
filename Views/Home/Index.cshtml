@@ -1,0 +1,53 @@
+﻿<body id="body">
+    <h1 id="h1">Register page </h1>
+    <p class="pp1">please enetr all the requested information below !!</p>
+    <section>
+        <form>
+        <h3 class="f1">Email</h3><input  onclick="alert1()" type="email" class="email" />
+    <br />
+            <h3 class="f1">Firstname</h3><input onclick="alert2()" type="text" placeholder="like hamzah" />
+    <br />
+            <h3 class="f1">Lastname</h3><input onclick="alert3()" type="text" placeholder="like alzoubi" />
+    <br />
+            <h3 class="f1">Password</h3><input id="pass" onclick="alert4()" type="password" />
+    <br />
+            <h3 class="f1">City</h3><input onclick="alert5()" type="text" placeholder="put your city" />
+    <br />
+            <h3 class="f1">Gender</h3><h3 class="f2"> male</h3><input type="radio" name="gender" value="male" />
+            <h3 class="f2">female</h3><input type="radio" name="gender" value="female" />
+            <br />
+            <h3 class="f1">study level</h3><h3 class="f2">BA</h3><input type="radio" name="level" value="BA" />
+            <h3 class="f2">Master</h3><input type="radio" name="level" value="Master" />
+            <h3 class="f2">PHD</h3><input type="radio" name="level" value="PHD" />
+            <br />
+            <input onclick="changebackgroung()" type="button" value="regester now" />
+               </form>
+    </section>
+    <script>
+        function changebackgroung(){
+            document.getElementById("body").style.backgroundColor = "red";
+            //document.getElementById("body").style.backgroundColor="red";
+        }
+        function alert1(){
+             alert("put your email        should be like abcd@efgh.com");
+        }
+         function alert2(){
+             alert("please enter your first name ");
+        }
+         function alert3(){
+             alert("please enter your last name");
+        }
+         function alert4(){
+             alert("thw password should include capital char and a symbol");
+             /*x =document.getElementById("pass").value;
+               if (!/[A-Z]/.test(x)) { //here he check if there is a capital char
+                alert("Password must include at least one capital letter");
+            } else if (!/[^a-zA-Z0-9]/.test(x)) { // here he check if there is a symbol
+                alert("Password must include at least one symbol");
+            }*/
+        }
+         function alert5(){
+             alert("write your city");
+        }
+    </script>
+</body>
